@@ -1,0 +1,53 @@
+/* 
+   Course: CSCI 247 - Spring 2018
+   File Name: Lab1.c
+
+   Task 3:
+   - "#" marks a call to the preprocesser to include the following file in program
+   - Forward declarations are required because the compiler reads sequentially and our method does not yet exist when called in main
+   - Macros can both speed up compiling, as well as make it easier for the user to read our variables when they are being called more than once.
+     They are part of the pre-processor directive.
+   - Function calls like any other language allow us to departmentalize our program by what each section is doing, making our program more
+     efficient, as well as allowing us to call functions more than once in order to limit our code.
+   - Escape characters allow us to print characters that have a specific meaning in the C language.
+   - Operators are represented by specific characters which are already defined by the compiler to yield a specific operation. Functions are blocks
+     of code that generally yield multiple instructions defined by the programmer which execute whenever it is called. Functions are part of the compiling process
+     where as macros are part of the preprocessing.
+   - Keywords are words that have a specific meaning to a programming language. We used many keywords in this simple program including return, char, and void
+   - Printf produces output to the standard out "stdout" module. Whereas stdin would allow for input, and stderr would output error messages  
+
+   Task 4:
+   - 
+*/
+
+#include<stdio.h>
+#include<string.h>
+
+#define CHAR_DATA_TYPE "char"
+#define INT_DATA_TYPE "int"
+#define FLOAT_DATA_TYPE "float"
+#define DOUBLE_DATA_TYPE "double"
+
+void DataTypeSizes(void);
+
+int main()
+{
+  DataTypeSizes();
+  return(0);
+}
+
+void DataTypeSizes(void)
+{
+  /* print char */
+  printf("\"%s\" is a standard C datatype. Size of a \"%s\" data type is %ld\r\n",
+	 CHAR_DATA_TYPE, CHAR_DATA_TYPE, sizeof(char));
+  /* print int */
+  printf("\"%s\" is a standard C datatype. Size of a \"%s\" data type is %ld\r\n",
+	 INT_DATA_TYPE, INT_DATA_TYPE, sizeof(int));
+  /* print float */
+  printf("\"%s\" is a standard C datatype. Size of a \"%s\" data type is %ld\r\n",
+	 FLOAT_DATA_TYPE, FLOAT_DATA_TYPE, sizeof(float));
+  /* print double */								  
+  printf("\"%s\" is a standard C datatype. Size of a \"%s\" data type is %ld\r\n",
+	 DOUBLE_DATA_TYPE, DOUBLE_DATA_TYPE, sizeof(double));
+}
