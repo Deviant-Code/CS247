@@ -12,8 +12,8 @@
    char* itoa(int num, char* str, int base);
 
    int main(int argc, char* argv[]){
-     char* str[50];
-     itoa(1203, *str, 4);
+     char* str[500];
+     itoa(175, str, 16);
 
      return 0;
    }
@@ -36,15 +36,23 @@
      int count = 0;
      while(num > 0){
        int lsd = num % base;
-       str[count] =  '0' + lsd;
-       num /= base;
-       count++;
+       if(lsd > 9){
+          lsd -= 9;
+          str[count] =  'a' + lsd;
+
+       } else {
+          str[count] =  '0' + lsd;
+          num /= base;
+      }
+      count++;
      }
 
      if(flag != 0){
        str[count] = '-';
      }
+     /* needs to be reversed */
 
-     printf("%s", str);
+     printf("%s\n", str);
+     return str;
 
    }
