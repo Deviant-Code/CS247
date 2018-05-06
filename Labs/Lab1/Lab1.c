@@ -36,7 +36,7 @@ void DisplayString(const char* str);
 int main(int argc, char* argv[])
 {
   int i;
-  printf("argc: \"%d\"\nargv: \"%s\" \n", argc, argv[i]);
+  /*printf("argc: \"%d\"\nargv: \"%s\" \n", argc, argv[i]);*/
   DataTypeSizes();
   char str[100];
   GetStringFromStdin(str);
