@@ -1,0 +1,755 @@
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+socket
+fflush
+strcpy
+exit
+sprintf
+fopen
+__isoc99_sscanf
+connect
+signal
+puts
+stdin
+strtol
+fgets
+__errno_location
+read
+stdout
+memcpy
+strcasecmp
+__ctype_b_loc
+getenv
+stderr
+alarm
+gethostbyname
+gethostname
+bcopy
+close
+fprintf
+sleep
+__libc_start_main
+write
+__gmon_start__
+GLIBC_2.3
+GLIBC_2.7
+GLIBC_2.14
+GLIBC_2.2.5
+%zD 
+%rD 
+%jD 
+%bD 
+%ZD 
+%RD 
+%JD 
+%BD 
+%:D 
+%2D 
+=AF!
+AUATUSH
+l$0A
+t$0H
+X[]A\A]
+="A!
+ATUSH
+t$:E
+[]A\
+***truncH
+ated***
+=+<!
+AWAVAUATUSH
+D$/A
+H;D$
+8[]A\A]A^A_
+AWAVAUATUSH
+Error: CI
+lient unI
+able to I
+create sI
+F ockefA
+Error: DI
+NS is unI
+able to I
+resolve I
+server aI
+F(ddrefA
+F,ssA
+Error: UI
+nable toI
+ connectI
+ to the I
+F servfA
+F$erA
+Error: RI
+esult stI
+ring tooI
+ large. I
+IncreaseI
+ SUBMITRI
+_MAXBUF
+<_v	
+Error: CI
+lient unI
+able to I
+write toI
+ the serI
+F(ver
+Error: CI
+lient unI
+able to I
+read firI
+st headeI
+r from sI
+F0ervefA
+D$0H
+Error: CI
+lient unI
+able to I
+read heaI
+ders froI
+m serverI
+Error: CI
+lient unI
+able to I
+read staI
+tus messI
+age fromI
+ server
+Error: RI
+esult stI
+ring conI
+tains anI
+ illegalI
+ or unprI
+intable I
+characteI
+F8fA
+F@r.A
+[]A\A]A^A_
+Error: CH
+lient unH
+able to H
+create sH
+E ockef
+Error: DH
+NS is unH
+able to H
+resolve H
+server aH
+E(ddref
+E,ss
+%H+ 
+-H+ 
+[]A\A]A^A_
+%s: Error: Couldn't open %s
+Usage: %s [<input_file>]
+That's number 2.  Keep going!
+Halfway there!
+Good work!  On to the next...
+Welcome to my fiendish little bomb. You have 6 phases with
+which to blow yourself up. Have a nice day!
+Phase 1 defused. How about the next one?
+So you got that one.  Try this one.
+For NASA, space is still a high priority.
+Wow! You've defused the secret stage!
+flyers
+maduiersnfotvbylSo you think you can stop the bomb with ctrl-c, do you?
+Initialization error: Running on an illegal host [1]
+Initialization error: Running on an illegal host [2]
+ERROR: Input string is too large.
+Your instructor has been notified.
+Curses, you've found the secret phase!
+But finding it and solving it are quite different...
+Congratulations! You've defused the bomb!
+Your instructor has been notified and will verify your solution.
+Well...
+OK. :-)
+Invalid phase%s
+Initialization error:
+defused
+exploded
+%d:%s:%d:%s
+BOOM!!!
+The bomb has blown up.
+%d %d %d %d %d %d
+Error: Premature EOF on stdin
+GRADE_BOMB
+Error: Input line too long
+%d %d %s
+DrEvil
+linux-01
+linux-02
+linux-03
+linux-04
+linux-05
+linux-06
+linux-07
+linux-08
+linux-09
+linux-10
+linux-11
+linux-12
+linux-13
+linux-14
+linux-15
+linux-16
+linux-17
+linux-18
+linux-19
+linux-20
+cf409-05
+cf414-01
+cf416-01
+cf418-01
+cf162-01
+cf164-01
+cf165-01
+cf405-01
+cf414-02
+cf416-02
+cf418-02
+cf162-02
+cf164-02
+cf165-02
+cf405-02
+cf414-03
+cf416-03
+cf418-03
+cf162-03
+cf164-03
+cf165-03
+cf405-03
+cf414-04
+cf416-04
+cf418-04
+cf162-04
+cf164-04
+cf165-04
+cf405-04
+cf414-05
+cf416-05
+cf418-05
+cf162-05
+cf164-05
+cf165-05
+cf405-05
+cf414-06
+cf416-06
+cf418-06
+cf162-06
+cf164-06
+cf165-06
+cf405-06
+cf414-07
+cf416-07
+cf418-07
+cf162-07
+cf164-07
+cf165-07
+cf405-07
+cf414-08
+cf416-08
+cf418-08
+cf162-08
+cf164-08
+cf165-08
+cf405-08
+cf414-09
+cf416-09
+cf418-09
+cf162-09
+cf164-09
+cf165-09
+cf405-09
+cf414-10
+cf416-10
+cf418-10
+cf162-10
+cf164-10
+cf165-10
+cf405-10
+cf414-11
+cf416-11
+cf418-11
+cf162-11
+cf164-11
+cf165-11
+cf405-11
+cf414-12
+cf416-12
+cf418-12
+cf162-12
+cf164-12
+cf165-12
+cf405-12
+cf414-13
+cf416-13
+cf418-13
+cf162-13
+cf164-13
+cf165-13
+cf405-13
+cf414-14
+cf416-14
+cf418-14
+cf162-14
+cf164-14
+cf165-14
+cf405-14
+cf414-15
+cf416-15
+cf418-15
+cf162-15
+cf164-15
+cf165-15
+cf405-15
+cf414-16
+cf416-16
+cf418-16
+cf162-16
+cf164-16
+cf165-16
+cf405-16
+cf414-17
+cf416-17
+cf418-17
+cf162-17
+cf164-17
+cf165-17
+cf405-17
+cf414-18
+cf416-18
+cf418-18
+cf162-18
+cf164-18
+cf165-18
+cf405-18
+cf414-19
+cf416-19
+cf418-19
+cf162-19
+cf164-19
+cf405-19
+cf414-20
+cf416-20
+cf418-20
+cf162-20
+cf164-20
+cf165-20
+cf405-20
+cf473-01
+cf162-21
+cf164-21
+cf165-21
+cf405-21
+cf162-22
+cf164-22
+cf165-22
+cf405-22
+cf162-23
+cf164-23
+cf165-23
+cf405-23
+cf162-24
+cf164-24
+cf165-24
+cf405-24
+cf162-25
+cf164-25
+cf165-25
+cf405-25
+cf416-01.cs.wwu.edu
+cf418-01.cs.wwu.edu
+cf162-01.cs.wwu.edu
+cf164-01.cs.wwu.edu
+cf165-01.cs.wwu.edu
+cf405-01.cs.wwu.edu
+cf414-02.cs.wwu.edu
+cf416-02.cs.wwu.edu
+cf418-02.cs.wwu.edu
+cf162-02.cs.wwu.edu
+cf164-02.cs.wwu.edu
+cf165-02.cs.wwu.edu
+cf405-02.cs.wwu.edu
+cf414-03.cs.wwu.edu
+cf416-03.cs.wwu.edu
+cf418-03.cs.wwu.edu
+cf162-03.cs.wwu.edu
+cf164-03.cs.wwu.edu
+cf165-03.cs.wwu.edu
+cf405-03.cs.wwu.edu
+cf414-04.cs.wwu.edu
+cf416-04.cs.wwu.edu
+cf418-04.cs.wwu.edu
+cf162-04.cs.wwu.edu
+cf164-04.cs.wwu.edu
+cf165-04.cs.wwu.edu
+cf405-04.cs.wwu.edu
+cf414-05.cs.wwu.edu
+cf416-05.cs.wwu.edu
+cf418-05.cs.wwu.edu
+cf162-05.cs.wwu.edu
+cf164-05.cs.wwu.edu
+cf165-05.cs.wwu.edu
+cf405-05.cs.wwu.edu
+cf414-06.cs.wwu.edu
+cf416-06.cs.wwu.edu
+cf418-06.cs.wwu.edu
+cf162-06.cs.wwu.edu
+cf164-06.cs.wwu.edu
+cf165-06.cs.wwu.edu
+cf405-06.cs.wwu.edu
+cf414-07.cs.wwu.edu
+cf416-07.cs.wwu.edu
+cf418-07.cs.wwu.edu
+cf162-07.cs.wwu.edu
+cf164-07.cs.wwu.edu
+cf165-07.cs.wwu.edu
+cf405-07.cs.wwu.edu
+cf414-08.cs.wwu.edu
+cf416-08.cs.wwu.edu
+cf418-08.cs.wwu.edu
+cf162-08.cs.wwu.edu
+cf164-08.cs.wwu.edu
+cf165-08.cs.wwu.edu
+cf405-08.cs.wwu.edu
+cf414-09.cs.wwu.edu
+cf416-09.cs.wwu.edu
+cf418-09.cs.wwu.edu
+cf162-09.cs.wwu.edu
+cf164-09.cs.wwu.edu
+cf165-09.cs.wwu.edu
+cf405-09.cs.wwu.edu
+cf414-10.cs.wwu.edu
+cf416-10.cs.wwu.edu
+cf418-10.cs.wwu.edu
+cf162-10.cs.wwu.edu
+cf164-10.cs.wwu.edu
+cf165-11.cs.wwu.edu
+cf405-10.cs.wwu.edu
+cf414-11.cs.wwu.edu
+cf416-11.cs.wwu.edu
+cf418-11.cs.wwu.edu
+cf162-11.cs.wwu.edu
+cf164-11.cs.wwu.edu
+cf405-11.cs.wwu.edu
+cf414-12.cs.wwu.edu
+cf416-12.cs.wwu.edu
+cf418-12.cs.wwu.edu
+cf162-12.cs.wwu.edu
+cf164-12.cs.wwu.edu
+cf165-12.cs.wwu.edu
+cf405-12.cs.wwu.edu
+cf414-13.cs.wwu.edu
+cf416-13.cs.wwu.edu
+cf418-13.cs.wwu.edu
+cf162-13.cs.wwu.edu
+cf164-13.cs.wwu.edu
+cf165-13.cs.wwu.edu
+cf405-13.cs.wwu.edu
+cf414-14.cs.wwu.edu
+cf416-14.cs.wwu.edu
+cf418-14.cs.wwu.edu
+cf162-14.cs.wwu.edu
+cf164-14.cs.wwu.edu
+cf165-14.cs.wwu.edu
+cf405-14.cs.wwu.edu
+cf414-15.cs.wwu.edu
+cf416-15.cs.wwu.edu
+cf418-15.cs.wwu.edu
+cf162-15.cs.wwu.edu
+cf164-15.cs.wwu.edu
+cf165-15.cs.wwu.edu
+cf405-15.cs.wwu.edu
+cf414-16.cs.wwu.edu
+cf416-16.cs.wwu.edu
+cf418-16.cs.wwu.edu
+cf162-16.cs.wwu.edu
+cf164-16.cs.wwu.edu
+cf165-16.cs.wwu.edu
+cf405-16.cs.wwu.edu
+cf414-17.cs.wwu.edu
+cf416-17.cs.wwu.edu
+cf418-17.cs.wwu.edu
+cf162-17.cs.wwu.edu
+cf164-17.cs.wwu.edu
+cf165-17.cs.wwu.edu
+cf405-17.cs.wwu.edu
+cf414-18.cs.wwu.edu
+cf416-18.cs.wwu.edu
+cf418-18.cs.wwu.edu
+cf162-18.cs.wwu.edu
+cf164-18.cs.wwu.edu
+cf165-18.cs.wwu.edu
+cf405-18.cs.wwu.edu
+cf414-19.cs.wwu.edu
+cf416-19.cs.wwu.edu
+cf418-19.cs.wwu.edu
+cf162-19.cs.wwu.edu
+cf164-19.cs.wwu.edu
+cf165-19.cs.wwu.edu
+cf405-19.cs.wwu.edu
+cf414-20.cs.wwu.edu
+cf416-20.cs.wwu.edu
+cf418-20.cs.wwu.edu
+cf162-20.cs.wwu.edu
+cf164-20.cs.wwu.edu
+cf165-20.cs.wwu.edu
+cf405-20.cs.wwu.edu
+cf162-21.cs.wwu.edu
+cf164-21.cs.wwu.edu
+cf165-21.cs.wwu.edu
+cf405-21.cs.wwu.edu
+cf162-22.cs.wwu.edu
+cf164-22.cs.wwu.edu
+cf165-22.cs.wwu.edu
+cf405-22.cs.wwu.edu
+cf162-23.cs.wwu.edu
+cf164-23.cs.wwu.edu
+cf165-23.cs.wwu.edu
+cf405-23.cs.wwu.edu
+cf162-24.cs.wwu.edu
+cf164-24.cs.wwu.edu
+cf165-24.cs.wwu.edu
+cf405-24.cs.wwu.edu
+cf162-25.cs.wwu.edu
+cf164-25.cs.wwu.edu
+cf165-25.cs.wwu.edu
+cf405-25.cs.wwu.edu
+Program timed out after %d seconds
+Error: HTTP request failed with error %d: %s
+GET /%s/submitr.pl/?userid=%s&userpwd=%s&lab=%s&result=%s&submit=submit HTTP/1.0
+Error: Unable to connect to server %s
+%%%02X
+%s %d %[a-zA-z ]
+247.cs.wwu.edu
+AUTORESULT_STRING=%s
+247_BombLab
+csapp
+;*3$"
+XN1rTqbOw1YVlJfd73kv
+ericks80
+GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-4)
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include
+/usr/include/bits
+/usr/include
+bomb.c
+stddef.h
+types.h
+stdio.h
+libio.h
+stdlib.h
+phases.h
+support.h
+<built-in>
+printf
+__off_t
+_IO_read_ptr
+_chain
+size_t
+_shortbuf
+_IO_buf_base
+long long unsigned int
+read_line
+long long int
+phase_defused
+_fileno
+_IO_read_end
+_flags
+_IO_buf_end
+_cur_column
+_old_offset
+infile
+initialize_bomb
+_IO_marker
+stdin
+_IO_write_ptr
+_sbuf
+short unsigned int
+_IO_save_base
+_lock
+_flags2
+_mode
+__builtin_puts
+stdout
+sizetype
+_IO_write_end
+_IO_lock_t
+_IO_FILE
+fopen
+_pos
+_markers
+unsigned char
+/home/gopalas/Bomblab/bomblab/src
+short int
+_vtable_offset
+exit
+bomb.c
+input
+_next
+__off64_t
+_IO_read_base
+_IO_save_end
+__pad1
+__pad2
+__pad3
+__pad4
+__pad5
+_unused2
+argv
+phase_1
+phase_2
+phase_3
+phase_4
+phase_5
+phase_6
+_IO_backup_base
+argc
+main
+_IO_write_base
+GNU C 4.8.5 20150623 (Red Hat 4.8.5-4) -mtune=generic -march=x86-64 -ggdb -O1
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment
+.debug_aranges
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_str
+.debug_loc
+crtstuff.c
+__JCR_LIST__
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+completed.6337
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+bomb.c
+phases.c
+array.3160
+support.c
+sig_handler
+driverlib.c
+rio_readlineb
+__FRAME_END__
+__JCR_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+skip
+getenv@@GLIBC_2.2.5
+phase_defused
+strcasecmp@@GLIBC_2.2.5
+__errno_location@@GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+stdout@@GLIBC_2.2.5
+data_start
+input_strings
+strcpy@@GLIBC_2.2.5
+puts@@GLIBC_2.2.5
+stdin@@GLIBC_2.2.5
+write@@GLIBC_2.2.5
+_edata
+_fini
+num_input_strings
+printf@@GLIBC_2.2.5
+phase_5
+initialize_bomb_solve
+blank_line
+submitr
+phase_3
+phase_1
+invalid_phase
+init_driver
+alarm@@GLIBC_2.2.5
+close@@GLIBC_2.2.5
+node3
+read@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+fgets@@GLIBC_2.2.5
+explode_bomb
+node1
+__data_start
+signal@@GLIBC_2.2.5
+gethostbyname@@GLIBC_2.2.5
+node5
+fprintf@@GLIBC_2.2.5
+__gmon_start__
+strtol@@GLIBC_2.2.5
+fun7
+__dso_handle
+memcpy@@GLIBC_2.14
+_IO_stdin_used
+host_table
+func4
+string_length
+__libc_csu_init
+fflush@@GLIBC_2.2.5
+__isoc99_sscanf@@GLIBC_2.7
+_end
+_start
+secret_phase
+infile
+sigalrm_handler
+init_timeout
+__bss_start
+userid
+main
+bcopy@@GLIBC_2.2.5
+read_line
+strings_not_equal
+phase_4
+fopen@@GLIBC_2.2.5
+phase_6
+scratch
+_Jv_RegisterClasses
+driver_post
+send_msg
+phase_2
+gethostname@@GLIBC_2.2.5
+sprintf@@GLIBC_2.2.5
+exit@@GLIBC_2.2.5
+bomb_id
+connect@@GLIBC_2.2.5
+__TMC_END__
+_ITM_registerTMCloneTable
+node2
+node4
+user_password
+sleep@@GLIBC_2.2.5
+node6
+_init
+read_six_numbers
+initialize_bomb
+__ctype_b_loc@@GLIBC_2.3
+stderr@@GLIBC_2.2.5
+socket@@GLIBC_2.2.5
