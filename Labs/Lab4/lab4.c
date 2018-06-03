@@ -42,7 +42,7 @@ int main(int argc, char* argv[]){
 	printBits(unsignedFloat2);
 	printf("Float Class: %d\n", floatClass(unsignedFloat2));
 	printFloatClass(floatClass(unsignedFloat2));
-
+.0
 	//Task 2: Negate Float
 	float_bits negateFloat = float_negate(unsignedFloat);
 	printf("Reversed bits: %u \n", negateFloat);

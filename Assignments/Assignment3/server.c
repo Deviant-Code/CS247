@@ -13,21 +13,45 @@
 int main(int argc, char* argv[])
 {
 	int retVal = 0;
+ // Check for correct number of command line arguments
+  if(argc != 2){
+    printf("Please provide a argument when running program. \n");
+    return -1;
+  }
 
-  <Confirm argc is 2 and if not print a usage string.>
- 
-  <Use the POSIX "shm_open" API to open file descriptor with 
-    "O_CREAT | O_RDWR" options and the "0666" permissions>
+  int fd, i, j, k, l;
+  char* ptr;
+  //unsure if this is what we are supposed to do here. 
+  fd = shm_open("/shm.h", O_CREAT | O_RDWR, 0666);
 
-  <Use the "ftruncate" API to set the size to the size of your 
-    structure shm.h>
-	
-  <Use the "mmap" API to memory map the file descriptor>
-
-  <Set the "status" field to INVALID>
-  <Set the "data" field to atoi(argv[1])>
-  <Set the "status" field to VALID>
+  if(fd == -1){
+    printf("Failure with shm_open\n");
+    return -1;
+  }
   
+  //<Use the POSIX "shm_open" API to open file descriptor with 
+    //"O_CREAT | O_RDWR" options and the "0666" permissions>
+
+ // <Use the "ftruncate" API to set the size to the size of your 
+   // structure shm.h>
+	i = ftruncate(fd, 32);
+
+  //<Use the "mmap" API to memory map the file descriptor>
+  ptr = (char *)mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
+  
+  if(ptr == MAP_FAILED){
+    printf("fd: %d \n", fd);
+    perror("Map Failed");
+    return -1;
+  }
+
+  //<Set the "status" field to INVALID>
+  ptr->StatusEnum = INVALID;
+  //<Set the "data" field to atoi(argv[1])>
+  ptr->data = atoi(argv[1]);
+
+  //<Set the "status" field to VALID>
+  ptr->StatusEnus = VALID;  
 
   printf("[Server]: Server data Valid... waiting for client\n");
 
@@ -38,14 +62,21 @@ int main(int argc, char* argv[])
 
   printf("[Server]: Server Data consumed!\n");
   
-  <use the "munmap" API to unmap the pointer>
-  
-  <use the "close" API to close the file Descriptor>
-  
-  <use the "shm_unlink" API to revert the shm_open call above>
-  
-  printf("[Server]: Server exiting...\n");
+  //<use the "munmap" API to unmap the pointer>
+  j = munmap(ptr, 32);
 
+  <use the "close" API to close the file Descriptor>
+  k = close(fd);
+
+  if(k = -1){
+    perror("Close() failed");
+    return -1;
+  }
+
+ //<use the "shm_unlink" API to revert the shm_open call above>
+  l = shm_unlink("/shm.h");
+
+  printf("[Server]: Server exiting...\n");
 
   return(retVal);
 
