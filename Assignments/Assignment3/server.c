@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
   }
 
   int fd, i, j, k, l;
-  char* ptr;
+  ShmData* shmPtr;
   //unsure if this is what we are supposed to do here. 
   fd = shm_open("/shm.h", O_CREAT | O_RDWR, 0666);
 
@@ -37,21 +37,21 @@ int main(int argc, char* argv[])
 	i = ftruncate(fd, 32);
 
   //<Use the "mmap" API to memory map the file descriptor>
-  ptr = (char *)mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
+  shmPtr = mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
   
-  if(ptr == MAP_FAILED){
+  if(shmPtr == MAP_FAILED){
     printf("fd: %d \n", fd);
     perror("Map Failed");
     return -1;
   }
 
   //<Set the "status" field to INVALID>
-  ptr->StatusEnum = INVALID;
+  shmPtr->status = INVALID;
   //<Set the "data" field to atoi(argv[1])>
-  ptr->data = atoi(argv[1]);
+  shmPtr->data = atoi(argv[1]);
 
   //<Set the "status" field to VALID>
-  ptr->StatusEnus = VALID;  
+  shmPtr->status = VALID;  
 
   printf("[Server]: Server data Valid... waiting for client\n");
 
@@ -63,12 +63,12 @@ int main(int argc, char* argv[])
   printf("[Server]: Server Data consumed!\n");
   
   //<use the "munmap" API to unmap the pointer>
-  j = munmap(ptr, 32);
+  j = munmap(shmPtr, 32);
 
-  <use the "close" API to close the file Descriptor>
+  //<use the "close" API to close the file Descriptor>
   k = close(fd);
 
-  if(k = -1){
+  if(k == -1){
     perror("Close() failed");
     return -1;
   }
