@@ -10,9 +10,9 @@
     Using the timer_create API, we could set regular intervals to interrupt a process in order to retrieve data
     from the producer. Just as we accomplished in the previous assignment, we could set a timer period and using
     shared memory we could have our producer save necessary data fields to a structure in shared memory using
-    shm_open and mmap API's. Then we are able to signal our client process to retrieve the new data from the same 
+    shm_open and mmap API's. Then we are able to signal our client process to retrieve the new data from the same
     structure in shared memory. I can see this being a extremely useful tool for maintaining data between processes
-    at regular intervals but also a method that we need to be cautious in implementing the right protections.  
+    at regular intervals but also a method that we need to be cautious in implementing the right protections.
 */
 
 #include <stdio.h>
@@ -30,38 +30,42 @@
 
 int main(int argc, char* argv[])
 {
+	//Current size of shared memory set to size of struct in shm.h
+	int size = sizeof(ShmData);
 	int retVal = 0;
-  int size = 16;
   int fd, err;
   ShmData* shmPtr;
 
   //Check for correct number of command line arguments.
   if(argc != 2){
-    printf("Program requires one integer argument.\n");
-    return -1;
+    fprintf(stderr, "Program requires one integer argument.\n");
+    exit(EXIT_FAILURE);
   }
 
   //Create a new shared memory location w/ read write permission using shm.h file
   fd = shm_open("shm.h", O_CREAT | O_RDWR, 0666);
 
   if(fd == -1){
-    printf("Failure with shm_open.\n");
-    return -1;
+    perror("shm_open");
+    exit(EXIT_FAILURE);
   }
 
 	//Set size of shm shared memory structure
   err = ftruncate(fd, size);
 
 	if(err == -1){
-		return -1;
+		close(fd);
+		perror("ftruncate");
+		exit(EXIT_FAILURE);
 	}
 
   //<Use the "mmap" API to memory map the file descriptor>
   shmPtr = mmap(NULL, size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
 
   if(shmPtr == MAP_FAILED){
-    perror("Error w/ mmap\n");
-    return -1;
+		close(fd);
+    perror("mmap");
+    exit(EXIT_FAILURE);
   }
 
   //Set the shared structure data value to the user arg
@@ -80,22 +84,23 @@ int main(int argc, char* argv[])
   err = munmap(shmPtr, size);
 
 	if(err == -1){
-    printf("Error with munmap.\n");
-		return -1;
+		close(fd);
+    perror("munmap");
+		exit(EXIT_FAILURE);
 	}
 
   err = close(fd);
 
   if(err == -1){
-    perror("Error closing fd.\n");
-    return -1;
+    perror("close(fd)");
+    exit(EXIT_FAILURE);
   }
 
   err = shm_unlink("shm.h");
 
   if(err == -1){
-    printf("Error with shm_unlink.\n");
-		return -1;
+    perror("shm_unlink");
+		exit(EXIT_FAILURE);
 	}
 
   printf("[Server]: Server exiting...\n");

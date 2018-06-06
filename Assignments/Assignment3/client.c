@@ -18,8 +18,9 @@
 
 int main(int argc, char* argv[])
 {
+  //Current size of shared memory set to size of struct in shm.h
+  int size = sizeof(ShmData);
   int retVal = 0;
-  int size = 16;
   int fd, err;
   ShmData* shmPtr;
 
@@ -27,12 +28,18 @@ int main(int argc, char* argv[])
   fd = shm_open("/shm.h",O_RDWR, 0666);
 
   if(fd == -1){
-    printf("Error with Shm_open\n");
-    return -1;
+    perror("shm_open");
+    exit(EXIT_FAILURE);
   }
 
   //Memory map the file descriptor
   shmPtr = mmap(NULL, size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
+
+  if(shmPtr == MAP_FAILED){
+    close(fd);
+    perror("mmap");
+    exit(EXIT_FAILURE);
+  }
 
   printf("[Client]: Waiting for valid data ...\n");
 
@@ -49,11 +56,13 @@ int main(int argc, char* argv[])
   err = munmap(shmPtr, size);
 
   if(err == -1){
+    close(fd);
     printf("Error with munmap\n");
-    return -1;
+    exit(EXIT_FAILURE);
   }
-
   printf("[Client]: Client exiting...\n");
+  
+  close(fd);
 
   return(retVal);
 }

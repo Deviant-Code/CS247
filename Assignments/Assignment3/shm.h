@@ -1,7 +1,7 @@
 /* Jesse Ericksen
    CSCI 247
    Assignment 3
-   *Requires server.c and client.c in same directory. 
+   *Requires server.c and client.c in same directory.
 */
 
 #ifndef SHM_H
@@ -14,4 +14,4 @@ typedef struct{
 	int data;
 } ShmData;
 
-#endif 
+#endif
